@@ -1,0 +1,224 @@
+/* Base styles for all devices */
+body, p, h1, h2, h3, h4, h5, h6, li {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    line-height: 1.5;
+}
+
+/* List styling */
+ul, ol {
+    padding-left: 20px; /* standard indent */
+    margin: 10px 0;
+}
+
+li {
+    font-size: inherit; /* inherits parent font size */
+}
+
+/* Base image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Desktop (PC) styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+        padding: 40px;
+    }
+    h1 { font-size: 36px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 24px; }
+    h4 { font-size: 20px; }
+    h5 { font-size: 18px; }
+    h6 { font-size: 16px; }
+    p, li  { font-size: 18px; }
+
+    img {
+        width: 600px;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+        padding: 20px;
+    }
+    h1 { font-size: 30px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 22px; }
+    h4 { font-size: 18px; }
+    h5 { font-size: 16px; }
+    h6 { font-size: 14px; }
+    p, li  { font-size: 16px; }
+
+    img {
+        width: 400px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    h1 { font-size: 24px; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 14px; }
+    h6 { font-size: 12px; }
+    p, li  { font-size: 14px; }
+
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+
+/* Remove default body margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 0, 0, 0.514);
+}
+
+/* Full-width div without gaps */
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;         /* height of navbar */
+    background: rgb(0, 0, 0);
+    border-radius: .4rem;     /* remove rounding if you want exact edge-to-edge */
+    width: 100%;          /* full width */
+}
+
+
+.ul {
+    list-style: none;            /* remove bullets */
+    display: flex;               /* list items in a row */
+    gap: 30px;                   /* space between items */
+    padding: 0;
+    margin: 0;
+}
+
+.ul li a {
+    text-decoration: none;       /* remove underline */
+    color: white;                /* text color */
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.ul li a:hover {
+    color: #ffcc00;              /* optional hover effect */
+}
+
+
+.d2 {
+    display: flex;
+    justify-content: center;
+    height: 16rem; /* or adjust as needed */
+    margin-top: .6rem;
+}
+
+.c-img {
+    width: 250px;           /* same width and height */
+    height: 250px;
+    object-fit: cover;      /* keeps image proportion */
+    border-radius: 50%;     /* makes it a circle */
+}
+.qd{
+    background: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    border-radius: 1.5rem;
+}
+.h{
+    font-size: 1.7rem;
+}
+.h span{
+    color: rgb(18, 136, 214);
+}
+.h span:hover{
+    color: rgb(0, 255, 255);
+    transition: 1.5s;
+}
+.p{
+    font-size: 1.2rem;
+    margin-top: .9rem;
+}
+.p span{
+    color: Red;
+}
+
+.po{
+    font-size: 1.9rem;
+    margin-top: .9rem;
+   text-align: center;
+   color: blueviolet;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+}
+
+    input[type="text"], input[type="email"] {
+    width: 50%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;  /* this is the box color */
+    color: #f50707;                /* text color */
+    font-size: 1rem;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #ffcc00;      /* border color on focus */
+    background-color: #fff;     /* change box color when focused */
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #007BFF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block;
+    align-items: center;
+    margin-bottom: 1rem;         /* ensures proper centering */
+}
+.btn:hover {
+    background: rgb(255, 0, 0);
+    color: #2eff05;
+    transition: 2s;
+}
+.footer{
+    text-align: center;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1rem;
+}

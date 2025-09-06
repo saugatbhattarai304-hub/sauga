@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="div">
+       <ul class="ul">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Project</a></li>
+        <li><a href="#">Contact</a></li>
+       </ul>
+    </div>
+ 
+    <div class="d2">
+        <img src="https://yt3.googleusercontent.com/Be22AcdIIw0xuQqx6oV3ehgR68A3i5r25NSZmPzQsQQIoDXxmQiRcfMHPRxOAPdP0yd48CJ4nU4=s160-c-k-c0x00ffffff-no-rj" alt="" class="c-img">
+    </div>
+   <div class="qd">
+    <h1 class="h">Hello Everyone! Welcome to<br><span>My Portfolio</span></h1>
+      <p class="p">Hi, I’m <span>Saugat Bhattarai</span>, a web developer. I create professional, modern, and responsive websites that look great on any device and provide a seamless user experience.</p>
+   </div>
+   <p class="po">Let's take part in our survey.</p>
+   <form id="form">
+    <input type="text" id="name" placeholder="Enter your name" required>
+    <input type="email" id="email" placeholder="Enter your email" required>
+     <button type="submit" class="btn">Submit</button>
+   </form>
+   <script>
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent page reload
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+
+    if(name && email) {
+        alert(`Thank you, ${name}! For taking part in our survey. Our website is Developing soon.`);
+        form.reset(); // clear the form
+    } else {
+        alert("Please fill in both fields.");
+    }
+});
+</script>
+   <footer class="footer">
+    <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+   </footer>
+</body>
+</html>
